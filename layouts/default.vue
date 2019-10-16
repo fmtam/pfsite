@@ -29,8 +29,11 @@ export default {
 }
 
 .main {
-  padding: 4rem;
+  padding: 1rem;
+  @media (min-width: 400px) {
+    padding: 5rem;
+  }
   flex-grow: 1;
-  background-color: #f5f5f5;
 }
+
 </style>

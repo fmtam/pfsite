@@ -47,11 +47,24 @@ export default {
     '@nuxtjs/style-resources',
     ["@nuxtjs/google-analytics", {
       id: "UA-XXXXXX-X"
-    }]
+    }],
+    'nuxt-webfontloader',
+    'nuxt-fontawesome',
   ],
+  webfontloader: {
+    google: {
+      families: [
+        'Noto+Sans+JP'
+      ]
+    }
+  },
+  fontawesome: {
+    component:'fa'
+  },
   styleResources: {
     scss: [
-      './assets/css/_mixins.scss'
+      './assets/css/_vars.scss',
+      './assets/css/_mixins.scss',
       ]
   },
   markdownit: {

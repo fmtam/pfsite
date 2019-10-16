@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "title": "fineでブログをつくる",
+  "created_at": "2019-01-01T00:00:00.000Z",
+  "updated_at": "2019-01-01T00:00:00.000Z",
+  "draft": false,
+  "description": "Nuxt.jsでつくったブログのテンプレート",
+  "tags": "JavaScript,Nuxt.js",
+  "bodyContent": "fineブログをつくる。\n\n- fine sample\n- fine sample\n- fine sample\n\n\n# sample h1\n\nfinefinefine\n\n[fine Link](https://justsofine.com/)\n\nコードブロック\n\n```bash\npages/\n  posts/\n    - _date/\n      - _slug/\n        index.vue\n```\n\nコードブロックも文中のコード`Nuxt.js`も css でカスタマイズ可能。\n\n## fine h2\n\nsamplesamplesample\n\n### fine h3\n\nsamplesamplesample",
+  "bodyHtml": "<p>fineブログをつくる。</p>\n<ul>\n<li>fine sample</li>\n<li>fine sample</li>\n<li>fine sample</li>\n</ul>\n<h1>sample h1</h1>\n<p>finefinefine</p>\n<p><a href=\"https://justsofine.com/\">fine Link</a></p>\n<p>コードブロック</p>\n<pre><code class=\"hljs\">pages/\n  posts/\n    - _date/\n      - _slug/\n        index.vue</code></pre><p>コードブロックも文中のコード<code>Nuxt.js</code>も css でカスタマイズ可能。</p>\n<h2>fine h2</h2>\n<p>samplesamplesample</p>\n<h3>fine h3</h3>\n<p>samplesamplesample</p>\n",
+  "dir": "contents/posts/json",
+  "base": "2019-10-16-finesample.json",
+  "ext": ".json",
+  "sourceBase": "2019-10-16-finesample.md",
+  "sourceExt": ".md"
+}

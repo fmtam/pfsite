@@ -1,42 +1,73 @@
 <template>
   <nav class="nav is-PC">
-    <Logo />
+    <Brand />
     <ul class="nav-list-pc">
-      <li><nuxt-link to="/about" title="about myself">A</nuxt-link></li>
-      <li><nuxt-link to="/works" title="works">W</nuxt-link></li>
-      <li><nuxt-link to="/posts" title="some posts by me">P</nuxt-link></li>
-      <li><nuxt-link to="/contact" title="contact me">C</nuxt-link></li>
+      <li>
+        <nuxt-link to="/about" title="about myself">
+          <i>A</i>
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/works" title="works">
+          <i>W</i>
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/posts" title="some posts by me">
+          <i>P</i>
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/contact" title="contact me">
+          <i>C</i>
+        </nuxt-link>
+      </li>
     </ul>
+
     <div class="nav-bottom">
-      <nuxt-link to="/">L</nuxt-link>
+      <ul class="nav-sns-list">
+        <li class="nav-sns-item">
+          <a href="//github.com/fmtam" class="nav-sns-link" title="github" target="_blank"><i>g</i></a>
+        </li>
+        <li class="nav-sns-item">
+          <a href="//twitter.com/tweets" class="nav-sns-link" title="twitter" target="_blank"><i>t</i></a>
+        </li>
+        <li class="nav-sns-item">
+          <a href="//instagram.com" class="nav-sns-link" title="instagram" target="_blank"><i>i</i></a>
+        </li>
+      </ul>
     </div>
-  </nav>
-</template>
 
-<script>
-import Logo from '~/basics/logo'
+    </nav>
+  </template>
 
-export default {
-  components: {
-    Logo,
+  <script>
+  import Brand from '~/basics/Brand'
+
+  export default {
+    components: {
+      Brand,
+    }
   }
-}
-</script>
+  </script>
 
-<style lang="scss" scoped>
-.nav {
-  display: none;
-}
+  <style lang="scss" scoped>
+  .nav {
+    display: none;
+    i {
+      font-style: normal;
+    }
+  }
 
-@media (min-width: 400px) {
-  .nav.is-PC {
-    display: flex;
-    flex-direction: column;
-    max-width: 80px;
-    min-height: 100vh;
-    background-color: #ddd;
+  @media (min-width: 400px) {
+    .nav.is-PC {
+      display: flex;
+      flex-direction: column;
+      width: 64px;
+      min-height: 100vh;
+      background-color: #ddd;
     overflow: hidden;
-  }
+    }
 
   .nav-list-pc {
     padding: 1em;
@@ -48,20 +79,41 @@ export default {
     text-align: center;
     li + li {
       margin-top: 5rem;
-    }
+      }
     a {
       text-decoration: none;
+      }
     }
   }
-}
 
-.nav-bottom {
-  padding: 1em;
-  text-align: center;
-  background-color: #fff;
-  a {
-    text-decoration: none;
+  .nav-bottom {
+    padding: 1em;
+    text-align: center;
+    background-color: #ccc;
+    a {
+      text-decoration: none;
+      }
   }
-}
+
+  .nav-sns-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .nav-sns-item + .nav-sns-item {
+    margin-top: 1em;
+  }
+
+  .nav-sns-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4em;
+    border-radius: 100%;
+    background-color: #002;
+    color: #fff;
+    width: 2em;
+    height: 2em;
+  }
 
 </style>

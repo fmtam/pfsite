@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>this is an works page</p>
+    <h2>this is a works page</h2>
   </div>
 </template>
 
