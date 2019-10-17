@@ -32,9 +32,10 @@ export default {
         `https://sample.com${this.$route.path}`,
         this.title
       ],
-      twitter: `https://twitter.com/intent/tweet?url={0}&amp;text={1}`,
-      line: `https://line.com/?url={0}&amp;title={1}`,
-      facebook: `https://facebook.com/share.php?u={0}`,
+      twitter: `//twitter.com/intent/tweet?url={0}&amp;text={1}`,
+      line: `//line.com/?url={0}&amp;title={1}`,
+      facebook: `//facebook.com/sharer/sharer.php?u={0}`,
+      hatena: `//b.hatena.ne.jp/add?mode=confirm&amp;url={0}&amp;title={1}`
     }
   },
 
@@ -65,6 +66,8 @@ export default {
   display: flex;
   padding: 0;
   list-style-type: none;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .sns-list-item + .sns-list-item {

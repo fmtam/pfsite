@@ -1,29 +1,25 @@
 <template>
   <article class="content">
-
-    <div class="post-meta"><time>date here</time></div>
-    <div class="post-tags-wrap">
-      <div class="post-tag">post tags here</div>
-    </div>
-    <SNSshare />
-    <PageTitle :postTitle="title" />
-
-    <!--  -->
-    <div class="">
-      post contents here.
-    </div>
-
+    <header class="post-header">
+      <ul class="post-tag-list">
+        <li class="post-tag-item" v-for="tag in formatTags" :key="tag.id">{{ tag }}</li>
+      </ul>
+      <PostTitle :postTitle="title" />
+      <div class="post-meta"><time>{{ params.date }}</time></div>
+      <SNSshare />
+    </header>
+    <div v-html="bodyHtml" class="post-content"></div>
   </article>
 </template>
 
 <script>
 import { sourceFileArray } from '@/contents/posts/summary.json'
 import SNSshare from '@/components/SNSshare'
-import PageTitle from '@/basics/PageTitle'
+import PostTitle from '@/basics/PostTitle'
 
 export default {
   components: {
-    PageTitle, SNSshare,
+    PostTitle, SNSshare,
   },
   validate({ params }) {
     return sourceFileArray.includes(`contents/posts/markdown/${params.date}_${params.slug}.md`)
@@ -56,7 +52,29 @@ export default {
       return this.title + " | myPfsite"
     }
 
-  }
-
+  },
+  layout: 'blogPost',
 }
 </script>
+
+<style lang="scss" scoped>
+.post-header {
+  border-bottom: solid 1px #ddd;
+}
+
+.post-tag-list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+.post-tag-item {
+  font-size: .75rem;
+  padding: .2em .4em;
+  color: #fff;
+  background-color: $main-color;
+  + .post-tag-item {
+    margin-left: $gutter/2;
+  }
+}
+</style>

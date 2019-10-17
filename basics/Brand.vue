@@ -13,7 +13,7 @@
   display: block;
   padding: 1em;
   width: 100%;
-  background-color: #07273d;
+  background-color: $main-color;
   text-align: center;
   &:hover,
   &:focus,
@@ -23,11 +23,20 @@
     border: 0;
     text-decoration: none;
   }
+  // &:hover .brand {
+  //   outline: none;
+  //   border: 0;
+  //   text-decoration: none;
+  //   transform: scale(1.5) rotateY(180deg);
+  // }
 }
 
 .brand {
+  display: inline-block;
   font-style: normal;
   font-weight: 800;
-  color: #dee6f3;
+  color: #fff;
+  transition: all .24s ease-in;
 }
+
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div v-if="postList.length > 0">
-    <div>
+    <section class="post-container">
       <Post v-for="post in postList" :post="post" :key="post.id" />
-    </div>
+    </section>
     <div class="more" v-if="isActive" @click="getMore()">More...</div>
   </div>
   <div v-else>
@@ -49,3 +49,22 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.post-container {
+  display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: auto;
+  @include mq-up(sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include mq-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq-up(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+</style>

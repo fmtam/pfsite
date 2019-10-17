@@ -4,3 +4,8 @@
   </div>
 </template>
 
+<style lang="scss" scoped>
+ h2 {
+    background-color: $main-color;
+ }
+</style>

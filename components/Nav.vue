@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="nav-container">
     <NavPC/>
     <NavMB/>
   </div>
@@ -15,3 +15,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.nav-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+</style>

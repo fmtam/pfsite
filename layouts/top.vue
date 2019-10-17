@@ -1,6 +1,5 @@
 <template>
   <div class="l-page">
-    <Nav />
     <main class="main">
       <nuxt />
     </main>
@@ -30,10 +29,9 @@ export default {
 
 .main {
   padding: 1rem;
-  overflow-x: hidden;
   @include mq-up(sm) {
-    margin-left: 4rem;
-    padding: 4rem;
+    // margin-left: 4rem;
+    padding: 5rem;
   }
   flex-grow: 1;
 }

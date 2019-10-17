@@ -1,5 +1,5 @@
 <template>
-  <h2>{{ postTitle }}</h2>
+  <h2 class="post-title">{{ postTitle }}</h2>
 </template>
 
 <script>

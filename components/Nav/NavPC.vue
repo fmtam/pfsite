@@ -3,23 +3,23 @@
     <Brand />
     <ul class="nav-list-pc">
       <li>
-        <nuxt-link to="/about" title="about myself">
-          <i>A</i>
+        <nuxt-link class="nav-list-link" to="/about" title="about myself">
+          <i class="nav-list-icon">A</i>
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/works" title="works">
-          <i>W</i>
+        <nuxt-link class="nav-list-link" to="/works" title="works">
+          <i class="nav-list-icon">W</i>
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/posts" title="some posts by me">
-          <i>P</i>
+        <nuxt-link class="nav-list-link" to="/posts" title="some posts by me">
+          <i class="nav-list-icon">P</i>
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/contact" title="contact me">
-          <i>C</i>
+        <nuxt-link class="nav-list-link" to="/contact" title="contact me">
+          <i class="nav-list-icon">C</i>
         </nuxt-link>
       </li>
     </ul>
@@ -27,13 +27,14 @@
     <div class="nav-bottom">
       <ul class="nav-sns-list">
         <li class="nav-sns-item">
-          <a href="//github.com/fmtam" class="nav-sns-link" title="github" target="_blank"><i>g</i></a>
+          <a href="//github.com/fmtam" class="nav-sns-link" title="GitHub" target="_blank">
+          <i class="fab fa-github"></i></a>
         </li>
         <li class="nav-sns-item">
-          <a href="//twitter.com/tweets" class="nav-sns-link" title="twitter" target="_blank"><i>t</i></a>
+          <a href="//twitter.com/tweets" class="nav-sns-link" title="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
         </li>
         <li class="nav-sns-item">
-          <a href="//instagram.com" class="nav-sns-link" title="instagram" target="_blank"><i>i</i></a>
+          <a href="//instagram.com" class="nav-sns-link" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
       </ul>
     </div>
@@ -59,22 +60,24 @@
     }
   }
 
-  @media (min-width: 400px) {
-    .nav.is-PC {
+  .nav.is-PC {
+    @include mq-up(sm) {
       display: flex;
       flex-direction: column;
       width: 64px;
       min-height: 100vh;
-      background-color: #ddd;
-    overflow: hidden;
+      background-color: $light-gray;
+      overflow: hidden;
     }
+  }
 
+  @media (min-width: 400px) {
   .nav-list-pc {
-    padding: 1em;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+    padding: 1em;
     list-style-type: none;
     text-align: center;
     li + li {
@@ -108,12 +111,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .4em;
-    border-radius: 100%;
-    background-color: #002;
+    &:hover,
+    &:active,
+    &:visited {
+      color: rgb(48, 65, 87);
+    }
+  }
+
+  .nav-list-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
+    font-weight: 800;
+    font-size: .875rem;
     width: 2em;
     height: 2em;
+    padding: .4em;
+    background-color: #333;
+    border-radius: 100%;
   }
 
 </style>

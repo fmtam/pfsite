@@ -15,7 +15,7 @@ fineブログをつくる。
 - fine sample
 
 
-# sample h1
+## sample heading
 
 finefinefine
 
@@ -33,10 +33,10 @@ pages/
 
 コードブロックも文中のコード`Nuxt.js`も css でカスタマイズ可能。
 
-## fine h2
+### fine h3
 
 samplesamplesample
 
-### fine h3
+#### fine h4
 
 samplesamplesample
