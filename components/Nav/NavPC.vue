@@ -66,27 +66,28 @@
       flex-direction: column;
       width: 64px;
       min-height: 100vh;
-      background-color: $light-gray;
+      background-color: #fff;
       overflow: hidden;
+      box-shadow: 2px 0 4px rgba(0, 0, 0, .15);
     }
   }
 
-  @media (min-width: 400px) {
   .nav-list-pc {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-    padding: 1em;
-    list-style-type: none;
-    text-align: center;
-    li + li {
-      margin-top: 5rem;
+    @include mq-up(sm) {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: center;
+      padding: 1em;
+      list-style-type: none;
+      text-align: center;
+      li + li {
+        margin-top: 5rem;
       }
-    a {
-      text-decoration: none;
+      a {
+        text-decoration: none;
+        }
       }
-    }
   }
 
   .nav-bottom {

@@ -19,7 +19,7 @@
             </li>
             <li class="form-list-item">
               <label for="password">password</label>
-              <input id="password" type="text" class="form-list-input"/>
+              <input id="password" type="password" class="form-list-input"/>
             </li>
           </ul>
         </form>

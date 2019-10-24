@@ -4,7 +4,8 @@ const sourceFileNameToUrl = filepath => {
   const deleteExt = filepath.replace('.md', '')
   const fileName = deleteExt.split('/')[deleteExt.split('/').length - 1]
   const splitArray = fileName.split('_')
-  return `/posts/${splitArray[0]}/${splitArray[1]}`
+  // return `/posts/${splitArray[0]}/${splitArray[1]}`
+  return `/blog/${splitArray[0]}/${splitArray[1]}`
 }
 const generateDynamicRoutes = callback => {
   const routes = sourceFileArray.map(sourceFileName => {
@@ -38,7 +39,11 @@ export default {
     '@fortawesome/fontawesome-free/css/all.css'
   ],
   plugins: [
-    '@/plugins/markdownit'
+    '@/plugins/markdownit',
+    {
+      src: '@/plugins/vue-lazyload',
+      ssr: false
+    }
   ],
   modules: [
     '@nuxtjs/axios',

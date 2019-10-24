@@ -2,7 +2,7 @@
   <div class="article-summary">
     <a :href="formatUrl" class="post-link">
       <div class="post-image">
-        <img src="//placehold.it/640x320" alt="sample image" class="post-thumbnail" />
+        <img src="@/static/img/naniwo.jpg" alt="sample image" class="post-thumbnail" />
       </div>
       <div class="post-content">
         <PostDate :postDate="formatDate" />
@@ -56,9 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$radius: 1rem;
-$gutter: 1rem;
-
 .article-summary {
   border-radius: $radius;
   overflow: hidden;
@@ -72,13 +69,33 @@ $gutter: 1rem;
   width: 100%;
   height: 100%;
   transition: all .24s;
-  &:hover .post-thumbnail {
-    transform: scale(1.1);
+  &:hover {
+    .post-thumbnail {
+      transform: scale(1.1);
+    }
+    .post-image {
+      &::before {
+        background-color: rgba($main-color, 0);
+      }
+    }
   }
 }
 
 .post-image {
+  position: relative;
   overflow: hidden;
+  transition: .9s;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba($main-color, .7);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
 }
 
 .post-thumbnail {

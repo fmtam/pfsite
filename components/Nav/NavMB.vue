@@ -1,22 +1,19 @@
 <template>
   <ul class="nav-list-MB">
-    <li class="item01">item01</li>
-    <li class="item02">item02</li>
-    <li class="item03">item03</li>
+    <li class="nav-list-item"><nuxt-link class="nav-list-link" to="/about">About</nuxt-link></li>
+    <li class="nav-list-item"><nuxt-link class="nav-list-link" to="/works">Works</nuxt-link></li>
+    <li class="nav-list-item"><nuxt-link class="nav-list-link" to="/blog">Blog</nuxt-link></li>
+    <li class="nav-list-item"><nuxt-link class="nav-list-link" to="/contact">Contact</nuxt-link></li>
   </ul>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style lang="scss" scoped>
 .nav-list-MB {
   display: flex;
-
-  @media (min-width: 400px) {
+  justify-content: space-evenly;
+  padding: 0;
+  list-style-type: none;
+  @include mq-up(sm) {
     display: none;
   }
 }

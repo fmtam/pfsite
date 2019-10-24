@@ -32,7 +32,6 @@ export default {
   padding: 1rem;
   overflow-x: hidden;
   @include mq-up(sm) {
-    margin-left: 4rem;
     padding: 4rem;
   }
   flex-grow: 1;

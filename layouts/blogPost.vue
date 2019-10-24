@@ -1,24 +1,18 @@
 <template>
   <div class="l-page">
     <Nav />
-
     <aside class="post-aside post-aside-toc">
       <h4>toc</h4>
-
       <ul class="post-toc-list">
         <li class="post-toc-item"><a href="#" class="post-toc-link">link</a></li>
       </ul>
-
     </aside>
-
     <main class="main">
       <nuxt />
     </main>
-
     <aside class="post-aside post-aside-nav">
       <PostNav />
     </aside>
-
   </div>
 </template>
 
