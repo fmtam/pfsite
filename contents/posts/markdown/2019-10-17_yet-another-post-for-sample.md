@@ -5,7 +5,7 @@ created_at: 2019-10-17
 updated_at: 2019-10-17
 draft: false
 description: Still playing with Nuxt.js
-tags: JavaScript,Nuxt.js
+tags: JavaScript, Nuxt.js
 ---
 
 It is sometimes good to spend time playing with something totally new to you.

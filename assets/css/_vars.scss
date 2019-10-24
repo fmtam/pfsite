@@ -1,8 +1,9 @@
 // color
-$main-color: #96abf5;
+$main-color: #7e98f5;
 $sub-color: #7da5ca;
 $accent-color: #f49a9a;
 $positive-color: #aff6ba;
+$marker-color: rgba(255, 204, 102, .8);
 
 $light-blue: #dee6f3;
 $light-gray: #f8f8f8;
@@ -12,5 +13,9 @@ $text-color: #373f61;
 $gutter: 1rem; // 16px
 
 // fonts
-$font-sansSerif: 'Noto Sans JP', 'Yu Gothic', sans-serif;
-$font-serif: 'Noto JP', 'Yu Min', sans-serif;
+$font-sansSerif: 'Noto Sans JP',
+'Yu Gothic',
+sans-serif;
+$font-serif: 'Noto JP',
+'Yu Min',
+sans-serif;

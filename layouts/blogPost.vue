@@ -1,49 +1,39 @@
 <template>
   <div class="l-page">
     <Nav />
-    <aside class="post-aside">
+
+    <aside class="post-aside post-aside-toc">
       <h4>toc</h4>
-      <ul>
-        <li>Yet Another Post for Sample</li>
-        <li>Yet Another Post for Sample</li>
+
+      <ul class="post-toc-list">
+        <li class="post-toc-item"><a href="#" class="post-toc-link">link</a></li>
       </ul>
+
     </aside>
+
     <main class="main">
       <nuxt />
     </main>
+
     <aside class="post-aside post-aside-nav">
-      <ul class="post-nav-list">
-        <li class="post-nav-list-item">1</li>
-        <li class="post-nav-list-item">2</li>
-        <li class="post-nav-list-item">3</li>
-        <li class="post-nav-list-item">4</li>
-      </ul>
+      <PostNav />
     </aside>
+
   </div>
 </template>
 
 <script>
 import Nav from '~/components/Nav'
+import PostNav from '@/components/Blog/PostNav'
 
 export default {
   components: {
-    Nav
+    Nav, PostNav
   }
 }
 </script>
 
 <style lang="scss">
-// .l-page {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-//   margin: auto;
-//   @include mq-up(sm) {
-//     flex-direction: row;
-//   }
-// }
-
 .l-page {
   position: relative;
   display: grid;
@@ -65,6 +55,11 @@ export default {
   }
 }
 
+.post-toc-list {
+  padding: 0;
+  list-style-type: none;
+}
+
 .main {
   padding: 1rem;
   overflow: auto;
@@ -75,14 +70,4 @@ export default {
   flex-grow: 1;
 }
 
-h3 {
-  padding: 1em;
-  background-color: #ddd;
-  border-left: 4px solid #bbb;
-}
-
-h4 {
-  padding: 1em;
-  border-left: 4px solid #bbb;
-}
 </style>

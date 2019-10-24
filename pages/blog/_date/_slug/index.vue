@@ -1,10 +1,10 @@
 <template>
-  <article class="content">
+  <article class="post">
     <header class="post-header">
       <ul class="post-tag-list">
-        <li v-for="tag in formatTags" :key="tag.id">
+        <li v-for="tag in formatTags" :key="tag.id" class="post-tag-list-item">
           <PostTag :postTag="tag" />
-          </li>
+        </li>
       </ul>
       <PostTitle :postTitle="title" />
         <div class="post-meta"><PostDate :postDate="params.date" /></div>
@@ -62,6 +62,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.post {
+  > strong {
+    background: linear-gradient(transparent 60%, $marker-color 40%);
+  }
+}
+
 .post-header {
   border-bottom: solid 1px #ddd;
 }
@@ -70,6 +76,9 @@ export default {
   display: flex;
   padding: 0;
   list-style-type: none;
+  &-item + &-item {
+    margin-left: .4em;
+  }
 }
 
 .post-tag-item {

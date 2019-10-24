@@ -1,7 +1,11 @@
 @import './vars';
 
 // global style, reset
-*,*::before,*::after {box-sizing: border-box;}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -9,8 +13,16 @@ body {
   font-family: $font-sansSerif;
   background-color: $light-gray;
   color: $text-color;
+  letter-spacing: -0.01em;
 }
 
 p {
   line-height: 2;
+}
+
+hr {
+  outline: 1;
+  border: none;
+  height: 1px;
+  border-top: 1px solid $text-color;
 }

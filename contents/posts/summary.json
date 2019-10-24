@@ -1,33 +1,5 @@
 {
   "fileMap": {
-    "contents/posts/json/2019-10-17_object-based-ui-design.json": {
-      "id": 6,
-      "title": "object based UI design",
-      "created_at": "2019-10-17T00:00:00.000Z",
-      "updated_at": "2019-10-17T00:00:00.000Z",
-      "draft": false,
-      "description": "Still playing with Nuxt.js",
-      "tags": "JavaScript,Nuxt.js",
-      "dir": "contents/posts/json",
-      "base": "2019-10-17_object-based-ui-design.json",
-      "ext": ".json",
-      "sourceBase": "2019-10-17_object-based-ui-design.md",
-      "sourceExt": ".md"
-    },
-    "contents/posts/json/2019-10-17_so-many-samples-needed.json": {
-      "id": 5,
-      "title": "So many samples needed",
-      "created_at": "2019-10-17T00:00:00.000Z",
-      "updated_at": "2019-10-17T00:00:00.000Z",
-      "draft": false,
-      "description": "we need so many samples",
-      "tags": "JavaScript,Nuxt.js,samples",
-      "dir": "contents/posts/json",
-      "base": "2019-10-17_so-many-samples-needed.json",
-      "ext": ".json",
-      "sourceBase": "2019-10-17_so-many-samples-needed.md",
-      "sourceExt": ".md"
-    },
     "contents/posts/json/2019-01-01_sample-md.json": {
       "id": 1,
       "title": "Nuxt.jsでブログをつくる",
@@ -56,6 +28,34 @@
       "sourceBase": "2019-10-16_fine-sample.md",
       "sourceExt": ".md"
     },
+    "contents/posts/json/2019-10-17_object-based-ui-design.json": {
+      "id": 6,
+      "title": "object based UI design",
+      "created_at": "2019-10-17T00:00:00.000Z",
+      "updated_at": "2019-10-17T00:00:00.000Z",
+      "draft": false,
+      "description": "Still playing with Nuxt.js",
+      "tags": "JavaScript,Nuxt.js",
+      "dir": "contents/posts/json",
+      "base": "2019-10-17_object-based-ui-design.json",
+      "ext": ".json",
+      "sourceBase": "2019-10-17_object-based-ui-design.md",
+      "sourceExt": ".md"
+    },
+    "contents/posts/json/2019-10-17_so-many-samples-needed.json": {
+      "id": 5,
+      "title": "So many samples needed",
+      "created_at": "2019-10-17T00:00:00.000Z",
+      "updated_at": "2019-10-17T00:00:00.000Z",
+      "draft": false,
+      "description": "we need so many samples",
+      "tags": "JavaScript,Nuxt.js,samples",
+      "dir": "contents/posts/json",
+      "base": "2019-10-17_so-many-samples-needed.json",
+      "ext": ".json",
+      "sourceBase": "2019-10-17_so-many-samples-needed.md",
+      "sourceExt": ".md"
+    },
     "contents/posts/json/2019-10-17_RE-yet-another-post-for-sample.json": {
       "id": 4,
       "title": "RE:Yet Another Post for Sample",
@@ -77,7 +77,7 @@
       "updated_at": "2019-10-17T00:00:00.000Z",
       "draft": false,
       "description": "Still playing with Nuxt.js",
-      "tags": "JavaScript,Nuxt.js",
+      "tags": "JavaScript, Nuxt.js",
       "dir": "contents/posts/json",
       "base": "2019-10-17_yet-another-post-for-sample.json",
       "ext": ".json",

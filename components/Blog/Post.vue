@@ -2,29 +2,30 @@
   <div class="article-summary">
     <a :href="formatUrl" class="post-link">
       <div class="post-image">
-        <img src="//placehold.it/640x320" alt="sample image" class="post-thumbnail">
+        <img src="//placehold.it/640x320" alt="sample image" class="post-thumbnail" />
       </div>
       <div class="post-content">
-        <div><time class="post-date">{{ formatDate }}</time></div>
-        <PostTitle :postTitle="post.title"/>
+        <PostDate :postDate="formatDate" />
+        <PostTitle :postTitle="post.title" />
         <ul class="post-tags-list">
           <li class="post-tags-item" v-for="tag in formatTags" :key="tag.id">
-            <div class="post-tag">{{ tag }}</div>
+            <PostTag :postTag="tag" />
           </li>
         </ul>
       </div>
-
     </a>
   </div>
 </template>
 
 <script>
 import PostTitle from '@/basics/PostTitle'
+import PostTag from '@/basics/PostTag'
+import PostDate from '@/basics/PostDate'
 
 export default {
   name: 'Post',
   components: {
-    PostTitle,
+    PostTitle, PostTag, PostDate,
   },
 
   props: {
@@ -48,7 +49,7 @@ export default {
       return this.post.tags.split(',')
     },
     formatUrl() {
-      return `/posts/${this.baseParam[0]}/${this.baseParam[1]}`
+      return `/blog/${this.baseParam[0]}/${this.baseParam[1]}`
     }
   }
 }
@@ -91,13 +92,7 @@ $gutter: 1rem;
   padding: $gutter $gutter*2;
 }
 
-.post-date {
-  font-size: .75rem;
-  color: #aaa;
-}
-
 .post-tags-list {
-  // display: flex;
   padding: 0;
   list-style-type: none;
 }
@@ -107,11 +102,4 @@ $gutter: 1rem;
   padding: 0 .2em;
 }
 
-.post-tag {
-  font-size: .75rem;
-  padding: .2em .4em;
-  background-color: #85f8c8;
-  border-radius: 4px;
-  color: #fff;
-}
 </style>

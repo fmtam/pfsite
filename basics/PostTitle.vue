@@ -1,5 +1,5 @@
 <template>
-  <h2 class="post-title">{{ postTitle }}</h2>
+  <h1 class="post-title">{{ postTitle }}</h1>
 </template>
 
 <script>
@@ -12,5 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.post-title {
+  color: $main-color;
+}
 </style>

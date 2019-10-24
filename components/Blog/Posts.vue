@@ -53,7 +53,6 @@ export default {
 <style lang="scss" scoped>
 .post-container {
   display: grid;
-  // grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   grid-auto-rows: auto;
   @include mq-up(sm) {

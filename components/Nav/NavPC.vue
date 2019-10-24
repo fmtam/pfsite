@@ -13,8 +13,8 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link class="nav-list-link" to="/posts" title="some posts by me">
-          <i class="nav-list-icon">P</i>
+        <nuxt-link class="nav-list-link" to="/blog" title="some blog post">
+          <i class="nav-list-icon">B</i>
         </nuxt-link>
       </li>
       <li>

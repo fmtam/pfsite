@@ -8,7 +8,7 @@ description: we need so many samples
 tags: JavaScript,Nuxt.js,samples
 ---
 
-Still it is sometimes good to spend time playing with something totally new to you.
+Still it is **sometimes** good to spend time playing with something totally new to you.
 
 - list item
 - list item
@@ -31,6 +31,12 @@ pages/
     - _date/
       - _slug/
         index.vue
+```
+
+```html
+<div>
+  <p style="color: red;" class="hoge" data-hoge="hoge">hoge</p>
+</div>
 ```
 
 コードブロックも文中のコード`Nuxt.js`も css でカスタマイズ可能。

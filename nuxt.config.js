@@ -38,6 +38,7 @@ export default {
     '@fortawesome/fontawesome-free/css/all.css'
   ],
   plugins: [
+    '@/plugins/markdownit'
   ],
   modules: [
     '@nuxtjs/axios',
@@ -67,12 +68,12 @@ export default {
       './assets/css/_mixins.scss',
       ]
   },
-  markdownit: {
-    preset: 'default',
-    injected: true,
-    breaks: true,
-    html: true,
-  },
+  // markdownit: {
+  //   preset: 'default',
+  //   injected: true,
+  //   breaks: true,
+  //   html: true,
+  // },
   generate: {
     routes: generateDynamicRoutes
   },
