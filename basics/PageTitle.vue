@@ -7,11 +7,6 @@ export default {
   name: 'PageTitle',
   props: {
     title: String,
-  },
-  data() {
-    return {
-      title: '',
-    }
   }
 }
 </script>

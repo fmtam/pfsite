@@ -2,22 +2,26 @@
 $main-color: #7e98f5;
 $sub-color: #7da5ca;
 $accent-color: #f49a9a;
-$positive-color: #aff6ba;
+$positive-color: #6bee7f;
+$negative-color: #ff6f56;
 $marker-color: rgba(255, 204, 102, .8);
-
 
 $light-blue: #dee6f3;
 $light-gray: #f8f8f8;
 
 $text-color: #373f61;
+
+// transition
+$transition: .2s ease;
+
 // space
 $gutter: 1rem; // 16px
 $radius: 1rem;
+$line-height: 2em;
 
 // fonts
-$font-sansSerif: 'Noto Sans JP',
-'Yu Gothic',
-sans-serif;
-$font-serif: 'Noto JP',
-'Yu Min',
-sans-serif;
+$font-sansSerif: 'Noto Sans JP', 'Yu Gothic', sans-serif;
+$font-serif: 'Noto JP', 'Yu Min', sans-serif;
+
+// box shadow
+$box-shadow: 0 2px 4px rgba(0, 0, 0, .1);

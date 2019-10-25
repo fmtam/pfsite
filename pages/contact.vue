@@ -1,54 +1,82 @@
 <template>
-  <div>
-    <PageTitle title="contact"></PageTitle>
+  <div class="l-container">
 
-    <p>some text</p>
-
-    <hr />
+    <div>
+      <PageTitle title="contact"/>
+      <div class="board">
+        <p>some text here...</p>
+      </div>
+    </div>
 
     <div class="">
 
-      <div class="form">
-
-        <!-- TODO make it component -->
-        <form @submit.prevent="submit" >
-          <ul class="form-list">
-            <li class="form-list-item">
-              <label for="email">email</label>
-              <input id="email" type="text" class="form-list-input"/>
-            </li>
-            <li class="form-list-item">
-              <label for="password">password</label>
-              <input id="password" type="password" class="form-list-input"/>
-            </li>
-          </ul>
-        </form>
-
-      </div>
+      <!-- TODO make it component -->
+      <form @submit.prevent="submit" class="form">
+        <div class="form-item">
+          <FormInputLabel labelFor="inputSenderName" labelName="Name" rquired="true" class="form-input-label" />
+          <FormInput inputType="text" inputPlaceholder="Your Name" name="senderName"  id="inputSenderName" />
+        </div>
+        <div class="form-item">
+          <FormInputLabel labelFor="inputSenderEmail" labelName="Mail" class="form-input-label" />
+          <FormInput inputType="email" inputPlaceholder="Your Mail" name="senderName" id="inputSenderName" />
+        </div>
+        <div class="form-item">
+          <FormInputLabel labelFor="inputSenderEmail" labelName="Comment" class="form-input-label" />
+          <FormTextarea textareaName="senderComment" textPlaceholder="comment here" />
+        </div>
+        <div class="form-item">
+          <Button btnType="submit" btn="button-submit" buttonText="Submit"/>
+        </div>
+      </form>
 
     </div>
+
   </div>
 </template>
 
 <script>
 import PageTitle from '@/basics/PageTitle'
+import FormInputLabel from '@/basics/FormInputLabel'
+import FormInput from '@/basics/FormInput'
+import FormTextarea from '@/basics/FormTextarea'
+import Button from '@/basics/Button'
 
 export default {
   components: {
-    PageTitle,
+    PageTitle, FormInputLabel, FormInput, FormTextarea, Button
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.form-list {
-  outline: none;
-  padding: 0;
-  list-style-type: none;
+.l-container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
 }
 
-.form-list-input {
-  padding: .4em;
-  font-size: 1.4rem;
+.board {
+  padding: 1em;
+  background-color: #ddd;
+}
+
+.form {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: $radius;
+  box-shadow: $box-shadow;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  + .form-item {
+    @include mq-up(sm) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.form-input-label {
+  margin-bottom: .625rem;
 }
 </style>
