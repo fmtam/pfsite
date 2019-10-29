@@ -2,12 +2,18 @@
 $main-color: #7e98f5;
 $sub-color: #7da5ca;
 $accent-color: #f49a9a;
-$positive-color: #6bee7f;
+// $positive-color: #6bee7f;
+$positive-color: #85f8c8;
 $negative-color: #ff6f56;
 $marker-color: rgba(255, 204, 102, .8);
 
 $light-blue: #dee6f3;
 $light-gray: #f8f8f8;
+
+$dark-gray: #666;
+
+// $page-bg-color: #f1efe9;
+$page-bg-color: $light-gray;
 
 $text-color: #373f61;
 
@@ -20,8 +26,20 @@ $radius: 1rem;
 $line-height: 2em;
 
 // fonts
+<<<<<<< HEAD
 $font-sansSerif: 'Noto Sans JP', 'Yu Gothic', sans-serif;
 $font-serif: 'Noto JP', 'Yu Min', sans-serif;
+=======
+$font-sansSerif: 'Montserrat',
+'Noto Sans JP',
+'Yu Gothic',
+sans-serif;
+$font-rounded: 'M PLUS Rounded 1c',
+sans-serif;
+$font-serif: 'Noto JP',
+'Yu Min',
+serif;
+>>>>>>> a48eec8... update
 
 // box shadow
 $box-shadow: 0 2px 4px rgba(0, 0, 0, .1);

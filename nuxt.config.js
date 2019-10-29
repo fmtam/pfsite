@@ -26,24 +26,26 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:title', property: 'og:title', content: 'mypfsite' },
       { hid: 'og:url', property: 'og:url', content: 'https://sample.com/' },
-      { hid: 'og:description', property: 'og:description', content: 'mypfsite' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'mypfsite',
+      },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   loading: { color: '#fff' },
   css: [
     { src: '~/assets/css/common.scss', lang: 'scss' },
-    { src: '~/node_modules/highlight.js/styles/hopscotch.css', lang: 'css' },
-    '@fortawesome/fontawesome-free/css/all.css'
+    { src: '~/node_modules/highlight.js/styles/nord.css', lang: 'css' },
+    '@fortawesome/fontawesome-free/css/all.css',
   ],
   plugins: [
     '@/plugins/markdownit',
     {
       src: '@/plugins/vue-lazyload',
-      ssr: false
-    }
+      ssr: false,
+    },
   ],
   modules: [
     '@nuxtjs/axios',
@@ -51,27 +53,32 @@ export default {
     '@nuxtjs/markdownit',
     '@nuxtjs/sitemap',
     '@nuxtjs/style-resources',
-    ["@nuxtjs/google-analytics", {
-      id: "UA-XXXXXX-X"
-    }],
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-XXXXXX-X',
+      },
+    ],
     'nuxt-webfontloader',
     'nuxt-fontawesome',
   ],
   webfontloader: {
     google: {
+<<<<<<< HEAD
       families: [
         'Noto+Sans+JP'
       ]
     }
+=======
+      families: ['Noto+Sans+JP', 'Montserrat'],
+    },
+>>>>>>> a48eec8... update
   },
   fontawesome: {
-    component:'fa'
+    component: 'fa',
   },
   styleResources: {
-    scss: [
-      './assets/css/_vars.scss',
-      './assets/css/_mixins.scss',
-      ]
+    scss: ['./assets/css/_vars.scss', './assets/css/_mixins.scss'],
   },
   // markdownit: {
   //   preset: 'default',
@@ -80,19 +87,25 @@ export default {
   //   html: true,
   // },
   generate: {
-    routes: generateDynamicRoutes
+    routes: generateDynamicRoutes,
   },
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://sample.com/',
-    exclude: [
-      '/about'
-    ],
-    routes: generateDynamicRoutes
+    exclude: ['/about'],
+    routes: generateDynamicRoutes,
   },
   build: {
-    extend(config, ctx) {
+    extend(config, ctx) {},
+  },
+  preset: {
+    autoprefixer: {
+      grid: true,
     },
+<<<<<<< HEAD
     hardSource: true,
   }
+=======
+  },
+>>>>>>> a48eec8... update
 }

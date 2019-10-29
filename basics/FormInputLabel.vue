@@ -10,7 +10,7 @@ export default {
   props: {
     labelName: String,
     labelFor: String,
-  }
+  },
 }
 </script>
 
@@ -18,6 +18,6 @@ export default {
 .form-input-label {
   font-size: 1.125rem;
   font-weight: 800;
-  color: $main-color;
+  // color: $main-color;
 }
 </style>

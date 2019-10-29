@@ -8,7 +8,7 @@
 export default {
   name: 'Logo',
   props: {
-    name: String
+    name: String,
   },
 }
 </script>

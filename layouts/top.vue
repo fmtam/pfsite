@@ -1,5 +1,9 @@
 <template>
   <div class="l-page">
+<<<<<<< HEAD
+=======
+    <Hero />
+>>>>>>> a48eec8... update
     <main class="main">
       <nuxt />
     </main>
@@ -22,9 +26,9 @@ export default {
   margin: auto;
   display: flex;
   flex-direction: column;
-  @include mq-up(sm) {
-    flex-direction: row;
-  }
+  // @include mq-up(sm) {
+  //   flex-direction: row;
+  // }
 }
 
 .main {

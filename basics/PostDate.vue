@@ -9,12 +9,13 @@ export default {
   name: 'PostDate',
   props: {
     postDate: String,
-  }
+  },
 }
 </script>
 
 <style lang="scss" scope>
 .post-date {
-  font-size: .75rem;
+  font-size: 0.75rem;
+  color: $dark-gray;
 }
 </style>

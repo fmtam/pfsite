@@ -1,5 +1,6 @@
 {
   "fileMap": {
+<<<<<<< HEAD
     "contents/posts/json/2019-01-01_sample-md.json": {
       "id": 1,
       "title": "Nuxt.jsでブログをつくる",
@@ -28,6 +29,8 @@
       "sourceBase": "2019-10-16_fine-sample.md",
       "sourceExt": ".md"
     },
+=======
+>>>>>>> a48eec8... update
     "contents/posts/json/2019-10-17_object-based-ui-design.json": {
       "id": 6,
       "title": "object based UI design",
@@ -45,6 +48,23 @@
     "contents/posts/json/2019-10-17_yet-another-post-for-sample.json": {
       "id": 3,
       "title": "Yet Another Post for Sample",
+<<<<<<< HEAD
+=======
+      "created_at": "2019-10-17T00:00:00.000Z",
+      "updated_at": "2019-10-17T00:00:00.000Z",
+      "draft": false,
+      "description": "Still playing with Nuxt.js",
+      "tags": "JavaScript, Nuxt.js",
+      "dir": "contents/posts/json",
+      "base": "2019-10-17_yet-another-post-for-sample.json",
+      "ext": ".json",
+      "sourceBase": "2019-10-17_yet-another-post-for-sample.md",
+      "sourceExt": ".md"
+    },
+    "contents/posts/json/2019-10-17_RE-yet-another-post-for-sample.json": {
+      "id": 4,
+      "title": "RE:Yet Another Post for Sample",
+>>>>>>> a48eec8... update
       "created_at": "2019-10-17T00:00:00.000Z",
       "updated_at": "2019-10-17T00:00:00.000Z",
       "draft": false,
@@ -68,6 +88,20 @@
       "base": "2019-10-17_RE-yet-another-post-for-sample.json",
       "ext": ".json",
       "sourceBase": "2019-10-17_RE-yet-another-post-for-sample.md",
+      "sourceExt": ".md"
+    },
+    "contents/posts/json/2019-01-01_sample-md.json": {
+      "id": 1,
+      "title": "Nuxt.jsでブログをつくる",
+      "created_at": "2019-01-01T00:00:00.000Z",
+      "updated_at": "2019-01-01T00:00:00.000Z",
+      "draft": false,
+      "description": "Nuxt.jsでつくったブログのテンプレート",
+      "tags": "JavaScript,Nuxt.js",
+      "dir": "contents/posts/json",
+      "base": "2019-01-01_sample-md.json",
+      "ext": ".json",
+      "sourceBase": "2019-01-01_sample-md.md",
       "sourceExt": ".md"
     },
     "contents/posts/json/2019-10-17_so-many-samples-needed.json": {

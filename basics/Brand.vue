@@ -1,12 +1,8 @@
 <template>
-  <nuxt-link
-    to="/"
-    class="brand-link"
-  >
+  <nuxt-link to="/" class="brand-link">
     <i class="brand">M</i>
   </nuxt-link>
 </template>
-
 
 <style lang="scss" scoped>
 .brand-link {
@@ -23,12 +19,6 @@
     border: 0;
     text-decoration: none;
   }
-  // &:hover .brand {
-  //   outline: none;
-  //   border: 0;
-  //   text-decoration: none;
-  //   transform: scale(1.5) rotateY(180deg);
-  // }
 }
 
 .brand {
@@ -36,7 +26,6 @@
   font-style: normal;
   font-weight: 800;
   color: #fff;
-  transition: all .24s ease-in;
+  transition: all 0.24s ease-in;
 }
-
 </style>

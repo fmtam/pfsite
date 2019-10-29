@@ -1,15 +1,12 @@
 <template>
-  <div class="l-container">
-
-    <div>
-      <PageTitle title="contact"/>
+  <div class="page-content l-container">
+    <section>
+      <PageTitle title="contact" />
       <div class="board">
         <p>some text here...</p>
       </div>
-    </div>
-
-    <div class="">
-
+    </section>
+    <section>
       <!-- TODO make it component -->
       <form @submit.prevent="submit" class="form">
         <div class="form-item">
@@ -28,9 +25,7 @@
           <Button btnType="submit" btn="button-submit" buttonText="Submit"/>
         </div>
       </form>
-
-    </div>
-
+    </section>
   </div>
 </template>
 
@@ -44,6 +39,11 @@ import Button from '@/basics/Button'
 export default {
   components: {
     PageTitle, FormInputLabel, FormInput, FormTextarea, Button
+  },
+  methods: {
+    submit() {
+      alert('submit.')
+    }
   }
 }
 </script>
@@ -51,19 +51,22 @@ export default {
 <style lang="scss" scoped>
 .l-container {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 30% 70%;
+  grid-gap: 40px;
+}
+
+.page-title {
+  margin-bottom: $gutter*2;
 }
 
 .board {
   padding: 1em;
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 .form {
   padding: 2rem;
-  background-color: #fff;
-  border-radius: $radius;
-  box-shadow: $box-shadow;
+  background-color: $main-color;
 }
 
 .form-item {
@@ -78,5 +81,6 @@ export default {
 
 .form-input-label {
   margin-bottom: .625rem;
+  color: #fff;
 }
 </style>

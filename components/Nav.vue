@@ -1,7 +1,7 @@
 <template>
   <div class="nav-container">
-    <NavPC/>
-    <NavMB/>
+    <NavPC />
+    <NavMB />
   </div>
 </template>
 
@@ -11,10 +11,12 @@ import NavMB from '~/components/Nav/NavMB'
 
 export default {
   components: {
-    NavPC, NavMB
-  }
+    NavPC,
+    NavMB,
+  },
 }
 </script>
+<<<<<<< HEAD
 
 <style lang="scss" scoped>
 .nav-container {
@@ -23,3 +25,5 @@ export default {
   left: 0;
 }
 </style>
+=======
+>>>>>>> a48eec8... update

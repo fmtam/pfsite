@@ -1,42 +1,20 @@
 <template>
   <div class="article-summary">
-    <a :href="formatUrl" class="post-link">
-      <div class="post-image">
+    <a :href="formatUrl" class="work-link">
+      <div class="work-image">
         <img
           src="@/static/img/naniwo.jpg"
           alt="sample image"
-          class="post-thumbnail"
+          class="work-thumbnail"
         />
-      </div>
-      <div class="post-content">
-        <PostDate :postDate="formatDate" />
-        <PostTitle :postTitle="post.title" />
-        <ul class="post-tags-list">
-          <li class="post-tags-item" v-for="tag in formatTags" :key="tag.id">
-            <PostTag :postTag="tag" />
-          </li>
-        </ul>
       </div>
     </a>
   </div>
 </template>
 
 <script>
-import PostTitle from '@/basics/PostTitle'
-import PostTag from '@/basics/PostTag'
-import PostDate from '@/basics/PostDate'
-
 export default {
-  name: 'Post',
-  components: {
-    PostTitle,
-    PostTag,
-    PostDate,
-  },
-  props: {
-    postTitle: String,
-    post: Object,
-  },
+  name: 'Work',
   data() {
     return {
       baseParam: [],
@@ -64,17 +42,9 @@ export default {
   border-radius: $radius;
   overflow: hidden;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
-  .post-date {
-    display: inline-block;
-    margin-bottom: $gutter/2;
-  }
-  .post-title {
-    font-size: 1.6rem;
-    margin-bottom: $gutter/2;
-  }
 }
 
-.post-link {
+.work-link {
   display: block;
   background-color: #fff;
   text-decoration: none;
@@ -82,10 +52,10 @@ export default {
   height: 100%;
   transition: all 0.24s;
   &:hover {
-    .post-thumbnail {
+    .work-thumbnail {
       transform: scale(1.1);
     }
-    .post-image {
+    .work-image {
       &::before {
         opacity: 0;
       }
@@ -93,12 +63,12 @@ export default {
   }
 }
 
-.post-image {
+.work-image {
   position: relative;
   overflow: hidden;
   transition: 0.9s;
   &::before {
-    content: '';
+    content: 'image here';
     position: absolute;
     top: 0;
     left: 0;
@@ -108,21 +78,5 @@ export default {
     height: 100%;
     z-index: 2;
   }
-}
-
-.post-thumbnail {
-  width: 100%;
-  height: auto;
-  transition: all 0.24s;
-  vertical-align: bottom;
-}
-
-.post-content {
-  padding: $gutter $gutter * 2;
-}
-
-.post-tags-item {
-  display: inline-block;
-  padding: 0 0.2em;
 }
 </style>

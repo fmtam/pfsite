@@ -66,6 +66,9 @@ export default {
   > strong {
     background: linear-gradient(transparent 60%, $marker-color 40%);
   }
+  h1, h2, h3, h4, h5, h6 {
+    margin: $gutter*2 0 $gutter;
+  }
 }
 
 .post-header {
@@ -91,4 +94,10 @@ export default {
   }
 }
 
+<<<<<<< HEAD
+=======
+.post-content p {
+  margin-bottom: $gutter*2;
+}
+>>>>>>> a48eec8... update
 </style>

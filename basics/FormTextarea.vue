@@ -1,5 +1,9 @@
 <template>
-  <textarea :name="textareaName" :placeholder="textPlaceholder" class="form-textarea">
+  <textarea
+    :name="textareaName"
+    :placeholder="textPlaceholder"
+    class="form-textarea"
+  >
   </textarea>
 </template>
 
@@ -9,19 +13,19 @@ export default {
   props: {
     textareaName: String,
     textPlaceholder: String,
-  }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .form-textarea {
   font-size: 1rem;
-  padding: .625em;
+  padding: 0.625em;
   font-family: $font-sansSerif;
   border: 0;
   background-color: #f8f8f8;
   resize: block;
-  min-height: $line-height*7;
+  min-height: $line-height * 7;
   outline: none;
   transition: $transition;
   &:focus {

@@ -1,7 +1,7 @@
 <template>
-  <div v-if="postList.length > 0">
+  <div v-if="workList.length > 0">
     <section class="post-container">
-      <Post v-for="post in postList" :post="post" :key="post.id" />
+      <Post v-for="work in workList" :work="work" :key="work.id" />
     </section>
     <div class="more" v-if="isActive" @click="getMore()">More...</div>
   </div>
@@ -12,12 +12,12 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import Post from '@/components/Blog/Post'
+import Work from '@/components/Works/Work'
 
 export default {
-  name: 'Posts',
+  name: 'Works',
   components: {
-    Post,
+    Work,
   },
   data() {
     return {
@@ -25,11 +25,11 @@ export default {
     }
   },
   mounted() {
-    this.getPostList()
+    this.getWorkList()
     this.judgeMoreActive
   },
   computed: {
-    ...mapState('posts', ['postList', 'lastFlg', 'count', 'current', 'next']),
+    ...mapState('works', ['workList', 'lastFlg', 'count', 'current', 'next']),
     judgeMoreActive() {
       if (this.lastFlg) {
         this.isActive = false
@@ -37,9 +37,9 @@ export default {
     },
   },
   methods: {
-    ...mapActions('posts', ['getPostList']),
+    ...mapActions('works', ['getWorkList']),
     getMore() {
-      this.getPostList()
+      this.getWorkList()
       this.judgeMoreActive
     },
   },

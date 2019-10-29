@@ -1,5 +1,12 @@
 <template>
-  <input :type="inputType" :id="inputId" :name="inputName" :placeholder="inputPlaceholder" :required="required" class="form-input"/>
+  <input
+    :type="inputType"
+    :id="inputId"
+    :name="inputName"
+    :placeholder="inputPlaceholder"
+    :required="required"
+    class="form-input"
+  />
 </template>
 
 <script>
@@ -10,17 +17,17 @@ export default {
     inputName: String,
     inputId: String,
     inputPlaceholder: String,
-    rquired: Boolean
-  }
+    required: Boolean,
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .form-input {
   font-family: $font-sansSerif;
-  padding: .625em;
+  padding: 0.625em;
   font-size: 1rem;
-  transition: .2s;
+  transition: 0.2s;
   outline: none;
   border: 0;
   background-color: #f8f8f8;

@@ -38,14 +38,23 @@ export default {
   padding: 2rem;
   background-color: $light-blue;
   &-nav {
+<<<<<<< HEAD
     height: 100vh;
     background-color: $main-color;
     margin-left: 0;
     width: 100px;
     max-width: 100px;
+=======
+    position: fixed;
+    top: 0;
+    right: 0;
+>>>>>>> a48eec8... update
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: $gutter;
+    height: 100vh;
+    background-color: $main-color;
   }
 }
 

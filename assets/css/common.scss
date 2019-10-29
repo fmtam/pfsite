@@ -1,5 +1,7 @@
 @import './vars';
 
+@import './reset';
+
 // global style, reset
 *,
 *::before,
@@ -11,13 +13,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font-sansSerif;
+<<<<<<< HEAD
   background-color: $light-gray;
+=======
+  background-color: $page-bg-color;
+>>>>>>> a48eec8... update
   color: $text-color;
   letter-spacing: -0.01em;
 }
 
 p {
-  line-height: 2;
+  line-height: 1.68;
+  margin: $gutter 0 $gutter*2;
 }
 
 hr {
@@ -26,3 +33,4 @@ hr {
   height: 1px;
   border-top: 1px solid $text-color;
 }
+
