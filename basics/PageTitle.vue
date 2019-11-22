@@ -14,11 +14,5 @@ export default {
 <style lang="scss" scoped>
 .page-title {
   font-weight: 800;
-<<<<<<< HEAD
-=======
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: $main-color;
->>>>>>> a48eec8... update
 }
 </style>

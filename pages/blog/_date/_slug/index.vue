@@ -94,10 +94,4 @@ export default {
   }
 }
 
-<<<<<<< HEAD
-=======
-.post-content p {
-  margin-bottom: $gutter*2;
-}
->>>>>>> a48eec8... update
 </style>

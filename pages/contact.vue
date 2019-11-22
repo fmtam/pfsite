@@ -10,16 +10,16 @@
       <!-- TODO make it component -->
       <form @submit.prevent="submit" class="form">
         <div class="form-item">
-          <FormInputLabel labelFor="inputSenderName" labelName="Name" rquired="true" class="form-input-label" />
-          <FormInput inputType="text" inputPlaceholder="Your Name" name="senderName"  id="inputSenderName" />
+          <FormInputLabel labelFor="inputSenderName" labelName="Name" class="form-input-label" />
+          <FormInput inputType="text" inputPlaceholder="Your Name" name="senderName" required="true" id="inputSenderName" />
         </div>
         <div class="form-item">
           <FormInputLabel labelFor="inputSenderEmail" labelName="Mail" class="form-input-label" />
-          <FormInput inputType="email" inputPlaceholder="Your Mail" name="senderName" id="inputSenderName" />
+          <FormInput inputType="email" inputPlaceholder="Your Mail" name="senderName" required="true" id="inputSenderName" />
         </div>
         <div class="form-item">
           <FormInputLabel labelFor="inputSenderEmail" labelName="Comment" class="form-input-label" />
-          <FormTextarea textareaName="senderComment" textPlaceholder="comment here" />
+          <FormTextarea textareaName="senderComment" textPlaceholder="comment here" required="true" />
         </div>
         <div class="form-item">
           <Button btnType="submit" btn="button-submit" buttonText="Submit"/>

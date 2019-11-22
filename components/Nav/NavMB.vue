@@ -21,9 +21,11 @@
 .nav-list-MB {
   display: flex;
   justify-content: space-evenly;
-  padding: 0;
+  margin: 0;
+  padding: $gutter;
+  background-color: $main-color;
   list-style-type: none;
-  @include mq-up(sm) {
+  @include mq-up(md) {
     display: none;
   }
 }

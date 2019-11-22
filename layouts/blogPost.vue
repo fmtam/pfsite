@@ -31,30 +31,39 @@ export default {
 .l-page {
   position: relative;
   display: grid;
-  grid-template-columns: 64px 180px 1fr 100px;
+  @include mq-up(md) {
+    grid-template-columns: 64px 180px 1fr 100px;
+  }
 }
 
 .post-aside {
   padding: 2rem;
   background-color: $light-blue;
   &-nav {
-<<<<<<< HEAD
     height: 100vh;
     background-color: $main-color;
     margin-left: 0;
     width: 100px;
     max-width: 100px;
-=======
     position: fixed;
     top: 0;
     right: 0;
->>>>>>> a48eec8... update
     display: flex;
     justify-content: center;
     align-items: center;
     padding: $gutter;
     height: 100vh;
     background-color: $main-color;
+    background-color: $main-color;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq-up(md) {
+      height: 100vh;
+      width: 100px;
+      max-width: 100px;
+    }
   }
 }
 
@@ -66,9 +75,9 @@ export default {
 .main {
   padding: 1rem;
   overflow: auto;
-  max-height: 100vh;
-  @include mq-up(sm) {
-    padding: 4rem;
+  padding: 4rem;
+  @include mq-up(md) {
+    max-height: 100vh;
   }
   flex-grow: 1;
 }

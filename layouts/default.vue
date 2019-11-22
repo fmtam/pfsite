@@ -30,11 +30,7 @@ export default {
 
 .main {
   padding: 1rem;
-<<<<<<< HEAD
   overflow-x: hidden;
-=======
-  overflow: auto;
->>>>>>> a48eec8... update
   @include mq-up(sm) {
     padding: 4rem;
   }

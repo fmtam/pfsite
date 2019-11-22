@@ -64,15 +64,10 @@ export default {
   ],
   webfontloader: {
     google: {
-<<<<<<< HEAD
       families: [
         'Noto+Sans+JP'
       ]
     }
-=======
-      families: ['Noto+Sans+JP', 'Montserrat'],
-    },
->>>>>>> a48eec8... update
   },
   fontawesome: {
     component: 'fa',
@@ -102,10 +97,6 @@ export default {
     autoprefixer: {
       grid: true,
     },
-<<<<<<< HEAD
     hardSource: true,
   }
-=======
-  },
->>>>>>> a48eec8... update
 }
