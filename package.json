@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "pf and blog",
   "author": "matsui",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "nuxt",
