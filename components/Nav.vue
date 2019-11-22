@@ -16,7 +16,6 @@ export default {
   },
 }
 </script>
-<<<<<<< HEAD
 
 <style lang="scss" scoped>
 .nav-container {
@@ -27,5 +26,3 @@ export default {
   }
 }
 </style>
-=======
->>>>>>> a48eec8... update

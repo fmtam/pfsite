@@ -5,15 +5,8 @@
       <div class="board">
         <p>some text here...</p>
       </div>
-<<<<<<< HEAD
     </section>
     <section>
-=======
-    </div>
-
-    <div>
-
->>>>>>> 80d0228
       <!-- TODO make it component -->
       <form @submit.prevent="submit" class="form">
         <div class="form-item">
@@ -58,19 +51,12 @@ export default {
 <style lang="scss" scoped>
 .l-container {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: 30% 70%;
   grid-gap: 40px;
 }
 
 .page-title {
   margin-bottom: $gutter*2;
-=======
-  grid-gap: 2rem;
-  @include mq-up(md) {
-    grid-template-columns: 400px 1fr;
-  }
->>>>>>> 80d0228
 }
 
 .board {

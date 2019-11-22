@@ -1,9 +1,5 @@
 <template>
   <div class="l-page">
-<<<<<<< HEAD
-=======
-    <Hero />
->>>>>>> a48eec8... update
     <main class="main">
       <nuxt />
     </main>
