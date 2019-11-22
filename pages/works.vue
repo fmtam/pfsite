@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageTitle title="Works"/>
-    <h2>this is a works page</h2>
+    <p>this is a works page</p>
   </div>
 </template>
 
@@ -14,6 +14,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

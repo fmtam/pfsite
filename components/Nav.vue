@@ -18,8 +18,10 @@ export default {
 
 <style lang="scss" scoped>
 .nav-container {
-  position: sticky;
-  top: 0;
-  left: 0;
+  @include mq-up(md) {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
 }
 </style>

@@ -61,7 +61,7 @@
   }
 
   .nav.is-PC {
-    @include mq-up(sm) {
+    @include mq-up(md) {
       display: flex;
       flex-direction: column;
       width: 64px;
@@ -73,7 +73,7 @@
   }
 
   .nav-list-pc {
-    @include mq-up(sm) {
+    @include mq-up(md) {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
