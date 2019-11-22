@@ -1,7 +1,6 @@
 <template>
   <ul class="sns-list">
     <li class="sns-list-item">
-<<<<<<< HEAD
       <a class="sns-link" :href="getUrl(twitter)" target="_blank" rel="nofollow">
         <i class="fab fa-twitter"></i>
         </a>
@@ -15,31 +14,6 @@
       <a class="sns-link" :href="getUrl(facebook)" target="_blank" rel="nofollow">
         <i class="fab fa-facebook-f"></i>
         </a>
-=======
-      <a
-        class="sns-link"
-        :href="getUrl(twitter)"
-        target="_blank"
-        rel="nofollow"
-      >
-        <i class="fab fa-twitter icon-twitter"></i>
-      </a>
-    </li>
-    <li class="sns-list-item">
-      <a class="sns-link" :href="getUrl(line)" target="_blank" rel="nofollow">
-        <i class="fab fa-line icon-line"></i>
-      </a>
-    </li>
-    <li class="sns-list-item">
-      <a
-        class="sns-link"
-        :href="getUrl(facebook)"
-        target="_blank"
-        rel="nofollow"
-      >
-        <i class="fab fa-facebook-f icon-facebook"></i>
-      </a>
->>>>>>> a48eec8... update
     </li>
   </ul>
 </template>
@@ -89,30 +63,7 @@ export default {
   padding: 0;
   list-style-type: none;
   justify-content: space-evenly;
-<<<<<<< HEAD
   width: 100%;
-=======
-  &-item {
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-  }
-  &[class^='icon-'] {
-    color: #333;
-  }
-}
-
-.icon-twitter {
-  &:hover {
-    color: $Twitter-color;
-  }
-}
-
-.icon-line {
-  &:hover {
-    color: $LINE-color;
-  }
->>>>>>> a48eec8... update
 }
 
 .sns-list-item + .sns-list-item {

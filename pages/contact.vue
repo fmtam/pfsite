@@ -5,21 +5,28 @@
       <div class="board">
         <p>some text here...</p>
       </div>
+<<<<<<< HEAD
     </section>
     <section>
+=======
+    </div>
+
+    <div>
+
+>>>>>>> 80d0228
       <!-- TODO make it component -->
       <form @submit.prevent="submit" class="form">
         <div class="form-item">
-          <FormInputLabel labelFor="inputSenderName" labelName="Name" rquired="true" class="form-input-label" />
-          <FormInput inputType="text" inputPlaceholder="Your Name" name="senderName"  id="inputSenderName" />
+          <FormInputLabel labelFor="inputSenderName" labelName="Name" class="form-input-label" />
+          <FormInput inputType="text" inputPlaceholder="Your Name" name="senderName" required="true" id="inputSenderName" />
         </div>
         <div class="form-item">
           <FormInputLabel labelFor="inputSenderEmail" labelName="Mail" class="form-input-label" />
-          <FormInput inputType="email" inputPlaceholder="Your Mail" name="senderName" id="inputSenderName" />
+          <FormInput inputType="email" inputPlaceholder="Your Mail" name="senderName" required="true" id="inputSenderName" />
         </div>
         <div class="form-item">
           <FormInputLabel labelFor="inputSenderEmail" labelName="Comment" class="form-input-label" />
-          <FormTextarea textareaName="senderComment" textPlaceholder="comment here" />
+          <FormTextarea textareaName="senderComment" textPlaceholder="comment here" required="true" />
         </div>
         <div class="form-item">
           <Button btnType="submit" btn="button-submit" buttonText="Submit"/>
@@ -51,12 +58,19 @@ export default {
 <style lang="scss" scoped>
 .l-container {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: 30% 70%;
   grid-gap: 40px;
 }
 
 .page-title {
   margin-bottom: $gutter*2;
+=======
+  grid-gap: 2rem;
+  @include mq-up(md) {
+    grid-template-columns: 400px 1fr;
+  }
+>>>>>>> 80d0228
 }
 
 .board {
